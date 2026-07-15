@@ -40,7 +40,7 @@ export const Route = createFileRoute("/")({
 });
 
 // ---------- CONFIG ----------
-const WHATSAPP_NUMBER = "5561965655159"; // [substituir pelo número real]
+const WHATSAPP_NUMBER = "5561995655159"; // [substituir pelo número real]
 const WHATSAPP_MESSAGE = encodeURIComponent(
   "Olá! Vim pelo site da Pincel Print e gostaria de um orçamento.",
 );
