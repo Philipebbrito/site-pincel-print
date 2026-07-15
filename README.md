@@ -1,3 +1,6 @@
+<img width="1280" height="1024" alt="image" src="https://github.com/user-attachments/assets/ddc1b296-9907-40ec-9afd-dc6ad54a6f64" />
+
+
 # Pincel Placas — Comunicação Visual em Brasília/DF
 
 > Placas, letra caixa, luminosos, fachadas e sinalização com projeto, produção e instalação.
