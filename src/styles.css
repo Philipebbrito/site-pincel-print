@@ -1,0 +1,123 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@theme {
+  --font-display: "Poppins", "Impact", sans-serif;
+  --font-sans: "Poppins", system-ui, sans-serif;
+
+  --color-royal: #2a2a2a;
+  --color-royal-deep: #0a0a0a;
+  --color-royal-ink: #0a0a0a;
+  --color-gold: #ffb020;
+  --color-gold-soft: #ffcf6b;
+  --color-bone: #f0ede6;
+  --color-bone-muted: #f0ede6cc;
+
+  --color-background: #2a2a2a;
+  --color-foreground: #f0ede6;
+  --color-primary: #ffb020;
+  --color-primary-foreground: #0a0a0a;
+  --color-border: #ffffff1a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    background-color: var(--color-royal);
+    color: var(--color-bone);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "ss01";
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: 0.005em;
+    line-height: 0.95;
+  }
+  * {
+    border-color: var(--color-border);
+  }
+  ::selection {
+    background: var(--color-gold);
+    color: var(--color-royal-ink);
+  }
+}
+
+@utility font-display {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+@utility neon {
+  color: #fff3d1;
+  text-shadow:
+    0 0 4px #ffd97a,
+    0 0 10px #ffb020,
+    0 0 22px #ffb020cc,
+    0 0 46px #ffb02066,
+    0 0 90px #ffb02033;
+  animation: neon-flicker 6s infinite;
+}
+
+@keyframes neon-flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 1;
+    text-shadow:
+      0 0 4px #ffd97a,
+      0 0 10px #ffb020,
+      0 0 22px #ffb020cc,
+      0 0 46px #ffb02066,
+      0 0 90px #ffb02033;
+  }
+  20%, 24%, 55% {
+    opacity: 0.72;
+    text-shadow: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .neon { animation: none; }
+}
+
+@utility btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--color-gold);
+  color: var(--color-royal-ink);
+  font-weight: 700;
+  padding: 0.85rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  box-shadow: 0 8px 30px -8px #ffb02080;
+  &:hover {
+    background: var(--color-gold-soft);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 40px -8px #ffb020b3;
+  }
+}
+
+@utility btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--color-bone);
+  font-weight: 600;
+  padding: 0.85rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #f0ede64d;
+  transition: all 0.15s ease;
+  &:hover {
+    border-color: var(--color-gold);
+    color: var(--color-gold);
+  }
+}
