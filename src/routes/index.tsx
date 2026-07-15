@@ -34,6 +34,9 @@ import p3 from "@/assets/portfolio-3.jpg";
 import p4 from "@/assets/portfolio-4.jpg";
 import p5 from "@/assets/portfolio-5.jpg";
 import p6 from "@/assets/portfolio-6.jpg";
+import p7 from "@/assets/portfolio-7.jpg";
+import p8 from "@/assets/portfolio-8.jpg";
+import p9 from "@/assets/portfolio-9.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -140,12 +143,12 @@ const portfolio = [
   { img: p2, title: "Letra caixa luminosa", cat: "Restaurante · [cliente]", span: "lg:col-span-2 lg:row-span-2" },
   { img: p1, title: "Fachada em ACM", cat: "Escritório · [cliente]", span: "" },
   { img: p3, title: "Envelopamento de frota", cat: "Logística · [cliente]", span: "" },
-  { img: p4, title: "Placa em acrílico", cat: "Corporativo · [cliente]", span: "lg:col-span-2" },
+  { img: p4, title: "Acrílico", cat: "Corporativo · [cliente]", span: "lg:col-span-2" },
   { img: p5, title: "Sinalização interna", cat: "Coworking · [cliente]", span: "" },
-  { img: p6, title: "Adesivação de vitrine", cat: "Varejo · [cliente]", span: "" },
-  { img: p6, title: "Adesivação de vitrine", cat: "Varejo · [cliente]", span: "" },
-  { img: p6, title: "Adesivação de vitrine", cat: "Varejo · [cliente]", span: "" },
-  { img: p6, title: "Adesivação de vitrine", cat: "Varejo · [cliente]", span: "" }
+  { img: p6, title: "Impressão Digital", cat: "Varejo · [cliente]", span: "" },
+  { img: p7, title: "Placas/Outdoors", cat: "Varejo · [cliente]", span: "" },
+  { img: p8, title: "Placas de Acessibilidade", cat: "Varejo · [cliente]", span: "" },
+  { img: p9, title: "Brindes", cat: "Varejo · [cliente]", span: "" }
 ];
 
 const faqs = [
@@ -298,7 +301,7 @@ function Index() {
             <div
               className="absolute -bottom-2 right-6 z-40 bg-gold text-royal-ink font-display uppercase text-sm px-4 py-2 rounded-lg rotate-[-4deg] shadow-lg"
             >
-              + de 100mil projetos entregues
+              + de 40mil projetos entregues
             </div>
           </div>
         </div>
@@ -335,7 +338,7 @@ function Index() {
           <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-10 md:gap-14 items-start">
             <div>
               <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase mb-3">
-                Por que Pincel
+                Por que a Pincel?
               </span>
               <h2 className="font-display uppercase text-4xl sm:text-5xl leading-[0.95]">
                 Três motivos<br />
@@ -540,7 +543,7 @@ function Index() {
               icon={MapPin}
               label="Localização"
               value="Brasília / DF"
-              hint="Atendemos todo o Distrito Federal"
+              hint="Atendemos todo o Brasil"
               nolink
             />
           </div>
@@ -551,7 +554,7 @@ function Index() {
       <footer className="bg-royal-ink border-t border-white/10 py-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-bone/60">
           <img src={logo} alt="Pincel Placas" className="h-8 w-auto opacity-80" />
-          <p>© {new Date().getFullYear()} Pincel Placas · Comunicação Visual em Brasília/DF</p>
+          <p>© {new Date().getFullYear()} Pincel Print · Comunicação Visual em Brasília/DF</p>
         </div>
       </footer>
     </div>
