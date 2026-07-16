@@ -37,6 +37,7 @@ import p6 from "@/assets/portfolio-6.jpg";
 import p7 from "@/assets/portfolio-7.jpg";
 import p8 from "@/assets/portfolio-8.jpg";
 import p9 from "@/assets/portfolio-9.jpg";
+import p10 from "@/assets/santan.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -148,7 +149,7 @@ const portfolio = [
   { img: p6, title: "Sinalização Extena", cat: "Concessionária · [Premier]", span: "" },
   { img: p7, title: "Placas/Outdoors", cat: "Varejo · [Empresas]", span: "" },
   { img: p8, title: "Placas de Acessibilidade", cat: "Varejo · [Governo]", span: "" },
-  { img: p4, title: "Acrílico", cat: "Corporativo · [Vivo]", span: "lg:col-span-2" },
+  { img: p4, title: "Acrílico", cat: "Corporativo · [Vivo]", span: "" },
   { img: p9, title: "Brindes", cat: "Varejo · [Empresas]", span: "" }
 ];
 
@@ -419,8 +420,8 @@ function Index() {
             <div className="absolute top-0 left-0 w-[65%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-royal shadow-2xl -rotate-[3deg] hover:rotate-0 transition-transform duration-500 z-10">
               <img src={p4} alt="Peça em acrílico" className="w-full h-full object-cover" />
             </div>
-            <div className="absolute bottom-4 right-0 w-[60%] aspect-square rounded-2xl overflow-hidden border-4 border-gold shadow-2xl rotate-[5deg] hover:rotate-[2deg] transition-transform duration-500 z-20">
-              <img src={p5} alt="Sinalização interna" className="w-full h-full object-cover" />
+            <div className="absolute bottom-4 right-0 w-[60%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-royal shadow-2xl rotate-[5deg] hover:rotate-[2deg] transition-transform duration-500 z-20">
+              <img src={p10} alt="Sinalização interna" className="w-full h-full object-cover" />
             </div>
             <div className="absolute top-16 right-8 z-30 bg-royal-ink border border-gold/40 text-bone px-4 py-3 rounded-xl rotate-[3deg] shadow-xl">
               <div className="font-display text-3xl text-gold leading-none">[40]+</div>
