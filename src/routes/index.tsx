@@ -289,10 +289,10 @@ function Index() {
 
           {/* Collage */}
           <div className="lg:col-span-5 relative h-[420px] sm:h-[520px] lg:h-[560px]">
-            <div className="absolute top-0 right-4 w-[62%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-royal-deep shadow-2xl rotate-[4deg] hover:rotate-[2deg] transition-transform duration-500 z-20">
+            <div className="absolute top-0 right-4 w-[62%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-gold shadow-2xl rotate-[4deg] hover:rotate-[2deg] transition-transform duration-500 z-20">
               <img src={hero} alt="Letra caixa iluminada" className="w-full h-full object-cover" />
             </div>
-            <div className="absolute bottom-6 left-0 w-[58%] aspect-square rounded-2xl overflow-hidden border-4 border-gold shadow-2xl -rotate-[6deg] hover:-rotate-[3deg] transition-transform duration-500 z-30">
+            <div className="absolute bottom-6 left-0 w-[58%] aspect-square rounded-2xl overflow-hidden border-4 border-royal-deep shadow-2xl -rotate-[6deg] hover:-rotate-[3deg] transition-transform duration-500 z-30">
               <img src={p2} alt="Fachada em ACM" className="w-full h-full object-cover" />
             </div>
             <div className="absolute top-8 left-8 w-[42%] aspect-[3/4] rounded-2xl overflow-hidden border-4 border-royal-deep shadow-xl rotate-[-2deg] hover:rotate-0 transition-transform duration-500 z-10">
