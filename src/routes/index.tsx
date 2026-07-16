@@ -154,11 +154,11 @@ const portfolio = [
 const faqs = [
   {
     q: "Quais regiões vocês atendem?",
-    a: "Atendemos toda Brasília e entorno (DF e cidades vizinhas). [confirmar raio exato de atendimento]",
+    a: "Nossa sede é em Brasília/DF, mas atendemos em todo o Brasil. Temos projetos entregues em Mato Grosso, Mato Grosso do Sul, Goiás, Bahia e diversos outros estados. Somos parceiros de grandes redes como o McDonald's, garantindo padronização e qualidade em qualquer lugar do país.",
   },
   {
     q: "Como funciona o orçamento?",
-    a: "Você fala com a gente pelo WhatsApp, envia fotos do local ou o briefing do projeto e retornamos com uma proposta detalhada em até [X] horas úteis.",
+    a: "Você fala com a gente pelo WhatsApp, envia fotos do local ou o briefing do projeto e retornamos com uma proposta detalhada.",
   },
   {
     q: "Vocês fazem o projeto ou só a produção?",
@@ -166,7 +166,7 @@ const faqs = [
   },
   {
     q: "Qual o prazo médio de entrega?",
-    a: "Depende da peça — trabalhos simples saem em poucos dias; fachadas maiores costumam levar de [X a Y] dias úteis.",
+    a: "Depende da peça — trabalhos simples saem em poucos dias; fachadas maiores costumam levar de [1 a 10] dias úteis.",
   },
   {
     q: "A instalação está inclusa?",
@@ -320,7 +320,7 @@ function Index() {
               </h2>
             </div>
             <p className="text-bone/70 max-w-md text-lg">
-              Passe o mouse (ou toque) nos cards para ver o que fazemos em cada frente.
+              Passe o mouse (ou toque) nos cards para conhecer nossos trabalhos.
             </p>
           </div>
 
@@ -375,7 +375,7 @@ function Index() {
               Alguns trabalhos<br /> recentes
             </h2>
             <p className="mt-4 text-bone/70 text-lg">
-              Passe o mouse nas peças pra ver o projeto. [substituir por fotos reais dos jobs]
+              Passe o mouse nas peças pra ver o projeto. 
             </p>
           </div>
 
@@ -437,16 +437,29 @@ function Index() {
             </h2>
             <div className="mt-6 space-y-4 text-bone/80 text-lg leading-relaxed">
               <p>
-                [Texto institucional real da Pincel Placas — história, quando foi fundada,
-                valores e quantos projetos já entregou em Brasília.]
+                [A Pincel Placas foi fundada nos anos 80 por Carlos Magalhães, com uma visão 
+                simples: fazer placas que marcam presença. O que começou como uma oficina de 
+                sinalização em Brasília cresceu para se tornar referência em comunicação visual 
+                no Distrito Federal, entregando projetos para comércios, franquias e grandes 
+                corporações ao longo de décadas.]
               </p>
               <p>
-                [Complemento sobre a equipe, estrutura própria de produção e instalação, e
-                o que diferencia o atendimento no mercado de comunicação visual do DF.]
+                ["Nosso compromisso vai além da produção: cuidamos de tudo, do projeto visual 
+                à instalação no local, com equipe própria e materiais de primeira linha. Acreditamos 
+                que uma placa bem feita é a primeira impressão que o seu cliente tem do seu 
+                negócio — e não aceitamos menos que [valor principal — ex: excelência / perfeição / compromisso 
+                com o prazo]. Por isso trabalhamos com ACM de alta durabilidade, acrílicos cortados a laser e 
+                iluminação LED de última geração.]
+              </p>
+              <p>
+                ["Contamos com uma equipe de profissionais, desde designers e gravadores 
+                até técnicos de instalação. Nossa estrutura de produção própria em Brasília 
+                nos permite garantir qualidade e prazo em cada etapa do processo — algo que 
+                nos diferencia no mercado de comunicação visual do DF."]
               </p>
             </div>
             <div className="mt-8 flex flex-wrap gap-2">
-              {["ACM", "Letra caixa", "Luminosos", "Adesivação", "Acrílico", "Wayfinding"].map(
+              {["ACM", "Letra caixa", "Luminosos", "Adesivação", "Acrílico", "Brindes"].map(
                 (t) => (
                   <span
                     key={t}
