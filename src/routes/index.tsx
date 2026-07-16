@@ -197,7 +197,7 @@ function Index() {
       <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-royal/85 border-b border-white/10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between gap-4">
           <a href="#top" className="flex items-center shrink-0" onClick={closeMenu}>
-            <img src={logo} alt="Pincel Placas" className="h-10 sm:h-12 w-auto" />
+            <img src={logo} alt="Pincel Print" className="h-10 sm:h-12 w-auto" />
           </a>
 
           <nav className="hidden lg:flex items-center gap-8">
@@ -293,10 +293,10 @@ function Index() {
               <img src={hero} alt="Letra caixa iluminada" className="w-full h-full object-cover" />
             </div>
             <div className="absolute bottom-6 left-0 w-[58%] aspect-square rounded-2xl overflow-hidden border-4 border-gold shadow-2xl -rotate-[6deg] hover:-rotate-[3deg] transition-transform duration-500 z-30">
-              <img src={p1} alt="Fachada em ACM" className="w-full h-full object-cover" />
+              <img src={p3} alt="Fachada em ACM" className="w-full h-full object-cover" />
             </div>
             <div className="absolute top-8 left-8 w-[42%] aspect-[3/4] rounded-2xl overflow-hidden border-4 border-royal-deep shadow-xl rotate-[-2deg] hover:rotate-0 transition-transform duration-500 z-10">
-              <img src={p3} alt="Adesivação de frota" className="w-full h-full object-cover" />
+              <img src={p2} alt="Adesivação de frota" className="w-full h-full object-cover" />
             </div>
             <div
               className="absolute -bottom-2 right-6 z-40 bg-gold text-royal-ink font-display uppercase text-sm px-4 py-2 rounded-lg rotate-[-4deg] shadow-lg"
