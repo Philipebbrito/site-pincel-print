@@ -143,12 +143,12 @@ const portfolio = [
   { img: p2, title: "Letra caixa luminosa", cat: "Loja · [299 - DUCATI]", span: "lg:col-span-2 lg:row-span-2" },
   { img: p1, title: "Projetos Personalizados", cat: "Escritório · [Vivo]", span: "" },
   { img: p3, title: "Envelopamento de frota", cat: "Logística · [Empresas]", span: "" },
-  { img: p4, title: "Acrílico", cat: "Corporativo · [Vivo]", span: "lg:col-span-2" },
+  { img: hero, title: "Totens", cat: "Varejo · [Empresas]", span: "" },
   { img: p5, title: "Sinalização interna", cat: "Coworking · [Empresas]", span: "" },
   { img: p6, title: "Sinalização Extena", cat: "Concessionária · [Premier]", span: "" },
   { img: p7, title: "Placas/Outdoors", cat: "Varejo · [Empresas]", span: "" },
   { img: p8, title: "Placas de Acessibilidade", cat: "Varejo · [Governo]", span: "" },
-  { img: hero, title: "Totens", cat: "Varejo · [Empresas]", span: "" },
+  { img: p4, title: "Acrílico", cat: "Corporativo · [Vivo]", span: "lg:col-span-2" },
   { img: p9, title: "Brindes", cat: "Varejo · [Empresas]", span: "" }
 ];
 
@@ -296,7 +296,7 @@ function Index() {
             <div className="absolute bottom-6 left-0 w-[58%] aspect-square rounded-2xl overflow-hidden border-4 border-royal-deep shadow-2xl -rotate-[6deg] hover:-rotate-[3deg] transition-transform duration-500 z-30">
               <img src={p2} alt="Fachada em ACM" className="w-full h-full object-cover" />
             </div>
-            <div className="absolute top-8 left-8 w-[42%] aspect-[3/4] rounded-2xl overflow-hidden border-4 border-royal-deep shadow-xl rotate-[-2deg] hover:rotate-0 transition-transform duration-500 z-10">
+            <div className="absolute top-8 left-8 w-[42%] aspect-[3/4] rounded-2xl overflow-hidden border-4 border-border shadow-xl rotate-[-2deg] hover:rotate-0 transition-transform duration-500 z-10">
               <img src={p1} alt="Adesivação de frota" className="w-full h-full object-cover" />
             </div>
             <div
@@ -553,12 +553,11 @@ function Index() {
               hint="Veja os trabalhos mais recentes"
             />
             <ContactCard
-              href="#"
+              href="https://maps.app.goo.gl/u8eWFFPKsLn5io2p9"
               icon={MapPin}
               label="Localização"
-              value="Brasília / DF"
+              value="SIA - Brasília / DF"
               hint="Atendemos todo o Brasil"
-              nolink
             />
           </div>
         </div>
