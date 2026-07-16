@@ -38,6 +38,8 @@ import p7 from "@/assets/portfolio-7.jpg";
 import p8 from "@/assets/portfolio-8.jpg";
 import p9 from "@/assets/portfolio-9.jpg";
 import p10 from "@/assets/santan.jpg";
+import v3 from "@/assets/vid03.mp4";
+
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -310,8 +312,24 @@ function Index() {
       </section>
 
       {/* SERVIÇOS */}
-      <section id="servicos" className="py-20 sm:py-28 bg-royal-deep relative">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+      <section id="servicos" className="py-20 sm:py-28 relative overflow-hidden">
+        {/* VÍDEO DE FUNDO */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover z-0"
+        >
+          <source src={v3} type="video/mp4" />
+        </video>
+
+        {/* OVERLAY PARA O TEXTO NÃO FICAR ILEGÍVEL */}
+        {/* Ajuste a opacidade (bg-royal-deep/90) conforme a necessidade de contraste */}
+        <div className="absolute inset-0 bg-royal-deep/90 z-0" />
+
+        {/* CONTEÚDO */}
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
             <div className="max-w-2xl">
               <span className="inline-block text-xs sm:text-sm font-semibold tracking-[0.3em] text-gold uppercase mb-4">
