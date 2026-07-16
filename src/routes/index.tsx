@@ -140,15 +140,16 @@ const diferenciais = [
 ];
 
 const portfolio = [
-  { img: p2, title: "Letra caixa luminosa", cat: "Restaurante · [cliente]", span: "lg:col-span-2 lg:row-span-2" },
-  { img: p1, title: "Fachada em ACM", cat: "Escritório · [cliente]", span: "" },
-  { img: p3, title: "Envelopamento de frota", cat: "Logística · [cliente]", span: "" },
-  { img: p4, title: "Acrílico", cat: "Corporativo · [cliente]", span: "lg:col-span-2" },
-  { img: p5, title: "Sinalização interna", cat: "Coworking · [cliente]", span: "" },
-  { img: p6, title: "Impressão Digital", cat: "Varejo · [cliente]", span: "" },
-  { img: p7, title: "Placas/Outdoors", cat: "Varejo · [cliente]", span: "" },
-  { img: p8, title: "Placas de Acessibilidade", cat: "Varejo · [cliente]", span: "" },
-  { img: p9, title: "Brindes", cat: "Varejo · [cliente]", span: "" }
+  { img: p2, title: "Letra caixa luminosa", cat: "Loja · [299 - DUCATI]", span: "lg:col-span-2 lg:row-span-2" },
+  { img: p1, title: "Projetos Personalizados", cat: "Escritório · [Vivo]", span: "" },
+  { img: p3, title: "Envelopamento de frota", cat: "Logística · [Empresas]", span: "" },
+  { img: p4, title: "Acrílico", cat: "Corporativo · [Vivo]", span: "lg:col-span-2" },
+  { img: p5, title: "Sinalização interna", cat: "Coworking · [Empresas]", span: "" },
+  { img: p6, title: "Sinalização Extena", cat: "Concessionária · [Premier]", span: "" },
+  { img: p7, title: "Placas/Outdoors", cat: "Varejo · [Empresas]", span: "" },
+  { img: p8, title: "Placas de Acessibilidade", cat: "Varejo · [Governo]", span: "" },
+  { img: hero, title: "Totens", cat: "Varejo · [Empresas]", span: "" },
+  { img: p9, title: "Brindes", cat: "Varejo · [Empresas]", span: "" }
 ];
 
 const faqs = [
