@@ -334,7 +334,7 @@ function Index() {
       </section>
 
       {/* DIFERENCIAIS (bloco em dourado) */}
-      <section className="bg-orange text-royal-ink">
+      <section className="bg-orange-500 text-royal-ink">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 py-16 sm:py-20">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-10 md:gap-14 items-start">
             <div>
