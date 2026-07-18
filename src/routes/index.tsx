@@ -293,17 +293,17 @@ function Index() {
 
           {/* Collage */}
           <div className="lg:col-span-5 relative h-[420px] sm:h-[520px] lg:h-[560px]">
-            <div className="absolute top-0 right-4 w-[62%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-gold shadow-2xl rotate-[4deg] hover:rotate-[2deg] hover:scale-105 transition-transform duration-500 z-20">
+            <div className="absolute top-0 right-4 w-[62%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-gold shadow-2xl rotate-[4deg] hover:rotate-[2deg] hover:scale-105 active:rotate-0 active:scale-105 transition-transform duration-500 z-20">
               <img src={hero} alt="Letra caixa iluminada" className="w-full h-full object-cover" />
             </div>
-            <div className="absolute bottom-6 left-0 w-[58%] aspect-square rounded-2xl overflow-hidden border-4 border-royal-deep shadow-2xl -rotate-[6deg] hover:-rotate-[3deg] hover:scale-105 transition-transform duration-500 z-30">
+            <div className="absolute bottom-6 left-0 w-[58%] aspect-square rounded-2xl overflow-hidden border-4 border-royal-deep shadow-2xl -rotate-[6deg] hover:-rotate-[3deg] hover:scale-105 active:rotate-0 active:scale-105 transition-transform duration-500 z-30">
               <img src={p2} alt="Fachada em ACM" className="w-full h-full object-cover" />
             </div>
-            <div className="absolute top-8 left-8 w-[42%] aspect-[3/4] rounded-2xl overflow-hidden border-4 border-border shadow-xl rotate-[-2deg] hover:rotate-0 hover:scale-105 transition-transform duration-500 z-10">
+            <div className="absolute top-8 left-8 w-[42%] aspect-[3/4] rounded-2xl overflow-hidden border-4 border-border shadow-xl rotate-[-2deg] hover:rotate-0 hover:scale-105 active:rotate-0 active:scale-105 transition-transform duration-500 z-10">
               <img src={p1} alt="Adesivação de frota" className="w-full h-full object-cover" />
             </div>
             <div
-              className="absolute -bottom-2 right-6 z-40 bg-gold text-royal-ink font-display uppercase text-sm px-4 py-2 rounded-lg hover:scale-110 rotate-[-4deg] shadow-lg"
+              className="absolute -bottom-2 right-6 z-40 bg-gold text-royal-ink font-display uppercase text-sm px-4 py-2 rounded-lg hover:scale-110 active:rotate-0 active:scale-105 rotate-[-4deg] shadow-lg"
             >
               + de 40mil projetos entregues
             </div>
@@ -416,7 +416,7 @@ function Index() {
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-royal-ink/0 group-hover:bg-royal-ink/85 transition-colors duration-500" />
-                <figcaption className="absolute inset-0 flex flex-col justify-end p-5 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
+                <figcaption className="absolute inset-0 flex flex-col justify-end p-5 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 active:rotate-0 active:scale-105 transition-all duration-500">
                   <span className="text-xs font-semibold tracking-widest text-gold uppercase">
                     {p.cat}
                   </span>
@@ -439,10 +439,10 @@ function Index() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Collage */}
           <div className="lg:col-span-5 order-2 lg:order-1 relative h-[420px] sm:h-[500px]">
-            <div className="absolute top-0 left-0 w-[65%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-royal shadow-2xl -rotate-[3deg] hover:rotate-0 hover:scale-105 transition-transform duration-500 z-10">
+            <div className="absolute top-0 left-0 w-[65%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-royal shadow-2xl -rotate-[3deg] hover:rotate-0 hover:scale-105 active:rotate-0 active:scale-105 transition-transform duration-500 z-10">
               <img src={p4} alt="Peça em acrílico" className="w-full h-full object-cover" />
             </div>
-            <div className="absolute bottom-4 right-0 w-[60%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-red shadow-2xl rotate-[5deg] hover:rotate-[2deg] hover:scale-105 transition-transform duration-500 z-20">
+            <div className="absolute bottom-4 right-0 w-[60%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-red shadow-2xl rotate-[5deg] hover:rotate-[2deg] hover:scale-105 active:rotate-0 active:scale-105 transition-transform duration-500 z-20">
               <img src={p10} alt="Sinalização interna" className="w-full h-full object-cover" />
             </div>
             <div className="absolute top-16 right-8 z-30 bg-royal-ink border border-gold/100 text-bone px-4 py-3 rounded-xl rotate-[3deg] hover:scale-110 shadow-xl">
