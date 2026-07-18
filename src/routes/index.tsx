@@ -473,12 +473,14 @@ function Index() {
   {/* Esta div ocupará o restante do espaço disponível, alinhada à direita e à base */}
   {/* Adicionamos 'hidden md:block' para esconder em mobile muito pequeno se necessário,
       ou 'flex justify-end' para manter alinhada à direita */}
-  <div className="w-full flex justify-end mt-6 lg:mt-0 z-0">
-    <img
-      src={p11}
-      alt="Assinatura em traços brancos"
-      className="w-[40%] lg:w-[55%] left-30 object-contain -rotate-[2deg] opacity-90 hover:opacity-100 hover:rotate-[2deg] hover:scale-105 active:rotate-0 active:scale-105 transition-opacity duration-500"
-    />
+  <div className="absolute -bottom-10 lg:-bottom-16 -left-4 lg:-left-0 w-[70%] lg:w-[450px] z-40 pointer-events-none lg:pointer-events-auto">
+    <div className="transition-transform duration-500 hover:scale-105 active:scale-105">
+      <img 
+        src={p11} 
+        alt="Assinatura" 
+        className="w-full h-auto object-contain" 
+      />
+    </div>
   </div>
 
 </div>
