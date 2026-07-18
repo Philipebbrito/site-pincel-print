@@ -390,49 +390,56 @@ function Index() {
 
       {/* PORTFÓLIO */}
       <section id="portfolio" className="py-20 sm:py-28 bg-royal">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="max-w-2xl mb-12">
-            <span className="inline-block text-xs sm:text-sm font-semibold tracking-[0.3em] text-gold uppercase mb-4">
-              Portfólio
-            </span>
-            <h2 className="font-display uppercase text-4xl sm:text-6xl leading-[0.95]">
-              Alguns trabalhos<br /> recentes
-            </h2>
-            <p className="mt-4 text-bone/70 text-lg">
-              Passe o mouse nas imagens pra ver o projeto. 
-            </p>
-          </div>
+  <div className="mx-auto max-w-7xl px-4 sm:px-6">
+    <div className="max-w-2xl mb-12">
+      <span className="inline-block text-xs sm:text-sm font-semibold tracking-[0.3em] text-gold uppercase mb-4">
+        Portfólio
+      </span>
+      <h2 className="font-display uppercase text-4xl sm:text-6xl leading-[0.95]">
+        Alguns trabalhos<br /> recentes
+      </h2>
+      <p className="mt-4 text-bone/70 text-lg">
+        {/* Atualizado para refletir que funciona em ambos */}
+        Passe o mouse ou toque nas imagens para ver o projeto.
+      </p>
+    </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 auto-rows-[180px] sm:auto-rows-[220px] lg:auto-rows-[240px] gap-3 sm:gap-4">
-            {portfolio.map((p, i) => (
-              <figure
-                key={i}
-                className={`group relative overflow-hidden rounded-2xl border border-white/10 ${p.span}`}
-              >
-                <img
-                  src={p.img}
-                  alt={p.title}
-                  loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-royal-ink/0 group-hover:bg-royal-ink/85 transition-colors duration-500" />
-                <figcaption className="absolute inset-0 flex flex-col justify-end p-5 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 active:rotate-0 active:scale-105 transition-all duration-500">
-                  <span className="text-xs font-semibold tracking-widest text-gold uppercase">
-                    {p.cat}
-                  </span>
-                  <p className="font-display uppercase text-xl sm:text-2xl mt-1 text-bone">
-                    {p.title}
-                  </p>
-                  <ArrowUpRight className="absolute top-4 right-4 h-6 w-6 text-gold" />
-                </figcaption>
-                <div className="absolute top-3 left-3 bg-royal-ink/60 backdrop-blur text-bone text-xs font-semibold tracking-widest uppercase px-2.5 py-1 rounded-md">
-                  #{String(i + 1).padStart(2, "0")}
-                </div>
-              </figure>
-            ))}
+    <div className="grid grid-cols-2 lg:grid-cols-4 auto-rows-[180px] sm:auto-rows-[220px] lg:auto-rows-[240px] gap-3 sm:gap-4">
+      {portfolio.map((p, i) => (
+        <figure
+          key={i}
+          className={`group relative overflow-hidden rounded-2xl border border-white/10 ${p.span}`}
+        >
+          {/* A imagem responde ao group-hover E ao group-active (toque) */}
+          <img
+            src={p.img}
+            alt={p.title}
+            loading="lazy"
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-active:scale-110"
+          />
+          
+          {/* O overlay de cor responde ao group-hover E ao group-active */}
+          <div className="absolute inset-0 bg-royal-ink/0 group-hover:bg-royal-ink/85 group-active:bg-royal-ink/85 transition-colors duration-500" />
+          
+          {/* O texto responde ao group-hover E ao group-active */}
+          <figcaption className="absolute inset-0 flex flex-col justify-end p-5 opacity-0 translate-y-4 group-hover:opacity-100 group-active:opacity-100 group-hover:translate-y-0 group-active:translate-y-0 transition-all duration-500">
+            <span className="text-xs font-semibold tracking-widest text-gold uppercase">
+              {p.cat}
+            </span>
+            <p className="font-display uppercase text-xl sm:text-2xl mt-1 text-bone">
+              {p.title}
+            </p>
+            <ArrowUpRight className="absolute top-4 right-4 h-6 w-6 text-gold" />
+          </figcaption>
+          
+          <div className="absolute top-3 left-3 bg-royal-ink/60 backdrop-blur text-bone text-xs font-semibold tracking-widest uppercase px-2.5 py-1 rounded-md">
+            #{String(i + 1).padStart(2, "0")}
           </div>
-        </div>
-      </section>
+        </figure>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* SOBRE */}
       <section id="sobre" className="py-20 sm:py-28 bg-royal-deep">
