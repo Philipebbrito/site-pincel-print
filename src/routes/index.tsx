@@ -38,6 +38,7 @@ import p7 from "@/assets/portfolio-7.jpg";
 import p8 from "@/assets/portfolio-8.jpg";
 import p9 from "@/assets/portfolio-9.jpg";
 import p10 from "@/assets/santan.jpg";
+import p11 from "@/assets/assin.png";
 import v3 from "@/assets/vid03.mp4";
 
 
@@ -451,6 +452,9 @@ function Index() {
             </div>
             <div className="absolute bottom-4 right-0 w-[60%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-red shadow-2xl rotate-[5deg] hover:rotate-[2deg] hover:scale-105 active:rotate-0 active:scale-105 transition-transform duration-500 z-20">
               <img src={p10} alt="Sinalização interna" className="w-full h-full object-cover" />
+            </div>
+            <div className="absolute top-120 right-10 w-[80%] rounded-2xl overflow-hidden shadow-2xl rotate-[5deg] hover:rotate-[2deg] hover:scale-105 active:rotate-0 active:scale-105 transition-transform duration-500 z-20">
+              <img src={p11} alt="Sinalização interna" className="w-full h-full object-cover" />
             </div>
             <div className="absolute top-16 right-8 z-30 bg-royal-ink border border-gold/100 text-bone px-4 py-3 rounded-xl rotate-[3deg] hover:scale-110 shadow-xl">
               <div className="font-display text-3xl text-gold leading-none">[40]+</div>
