@@ -77,13 +77,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Pincel Placas | Comunicação Visual e Sinalização em Brasília/DF" },
+      { title: "Pincel Print | Comunicação Visual e Sinalização em Brasília/DF" },
       {
         name: "description",
         content:
           "Placas em ACM, letra caixa, luminosos, adesivação, fachadas e sinalização interna em Brasília/DF. Projeto, produção e instalação com garantia.",
       },
-      { property: "og:title", content: "Pincel Placas | Comunicação Visual em Brasília/DF" },
+      { property: "og:title", content: "Pincel Print | Comunicação Visual em Brasília/DF" },
       {
         property: "og:description",
         content:

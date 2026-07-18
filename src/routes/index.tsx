@@ -326,7 +326,7 @@ function Index() {
 
         {/* OVERLAY PARA O TEXTO NÃO FICAR ILEGÍVEL */}
         {/* Ajuste a opacidade (bg-royal-deep/90) conforme a necessidade de contraste */}
-        <div className="absolute inset-0 bg-royal-deep/90 z-0" />
+        <div className="absolute inset-0 bg-royal-deep/85 z-0" />
 
         {/* CONTEÚDO */}
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6">
@@ -438,7 +438,7 @@ function Index() {
             <div className="absolute top-0 left-0 w-[65%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-royal shadow-2xl -rotate-[3deg] hover:rotate-0 transition-transform duration-500 z-10">
               <img src={p4} alt="Peça em acrílico" className="w-full h-full object-cover" />
             </div>
-            <div className="absolute bottom-4 right-0 w-[60%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-royal shadow-2xl rotate-[5deg] hover:rotate-[2deg] transition-transform duration-500 z-20">
+            <div className="absolute bottom-4 right-0 w-[60%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-red shadow-2xl rotate-[5deg] hover:rotate-[2deg] transition-transform duration-500 z-20">
               <img src={p10} alt="Sinalização interna" className="w-full h-full object-cover" />
             </div>
             <div className="absolute top-16 right-8 z-30 bg-royal-ink border border-gold/40 text-bone px-4 py-3 rounded-xl rotate-[3deg] shadow-xl">
