@@ -273,9 +273,9 @@ function Index() {
               <span className="h-px w-8 bg-gold" />
               Brasília / DF
             </span>
-            <h1 className="font-display uppercase text-[clamp(2.75rem,8.5vw,6.75rem)] leading-[0.88]">
+            <h1 className="font-display uppercase text-[clamp(2.75rem,8.5vw,6.75rem)] leading-[0.99]">
               Sua marca <br />
-              <span className="neon">à vista</span>.
+              <span className="neon">à vista</span>
             </h1>
             <p className="mt-6 sm:mt-8 text-lg sm:text-xl text-bone/80 max-w-xl leading-relaxed">
               Placas, letra caixa, luminosos, fachadas e sinalização com projeto, produção
@@ -340,7 +340,7 @@ function Index() {
               </h2>
             </div>
             <p className="text-bone/70 max-w-md text-lg">
-              Passe o mouse (ou toque) nos cards para conhecer nossos trabalhos.
+              Conheça alguns dos nossos trabalhos.
             </p>
           </div>
 
@@ -399,7 +399,7 @@ function Index() {
               Alguns trabalhos<br /> recentes
             </h2>
             <p className="mt-4 text-bone/70 text-lg">
-              Passe o mouse nas peças pra ver o projeto. 
+              Passe o mouse nas imagens pra ver o projeto. 
             </p>
           </div>
 
@@ -456,30 +456,30 @@ function Index() {
             <span className="inline-block text-xs sm:text-sm font-semibold tracking-[0.3em] text-gold uppercase mb-4">
               Quem somos
             </span>
-            <h2 className="font-display uppercase text-4xl sm:text-6xl leading-[0.95]">
+            <h2 className="font-display uppercase text-4xl sm:text-5xl leading-[0.95]">
             "Mais que comunicação visual, um  <span className="neon">legado</span> gravado em cada detalhe"
             </h2>
             <div className="mt-6 space-y-4 text-bone/80 text-lg leading-relaxed">
               <p>
-                "A Pincel Placas foi fundada nos anos 80 por Carlos Magalhães, com uma visão 
+                A Pincel Placas foi fundada nos anos 80 por Carlos Magalhães, com uma visão 
                 simples: fazer placas que marcam presença. O que começou como uma oficina de 
-                sinalização em Brasília cresceu para se tornar referência em comunicação visual 
+                sinalização em Brasília, cresceu para se tornar referência em comunicação visual 
                 no Distrito Federal, entregando projetos para comércios, franquias e grandes 
-                corporações ao longo de décadas."
+                corporações ao longo de décadas.
               </p>
               <p>
-                "Nosso compromisso vai além da produção: cuidamos de tudo, do projeto visual 
+                Nosso compromisso vai além da produção: cuidamos de tudo, do projeto visual 
                 à instalação no local, com equipe própria e materiais de primeira linha. 
                 Acreditamos que uma placa bem feita é a primeira impressão que o seu cliente tem 
                 do seu negócio — e não aceitamos menos que a perfeição que o nosso legado exige. 
                 Por isso trabalhamos com ACM de alta durabilidade, acrílicos cortados a laser e 
-                iluminação LED de última geração."
+                iluminação LED de última geração.
               </p>
               <p>
-                "Contamos com uma equipe de profissionais, desde designers e gravadores 
+                Contamos com uma equipe de profissionais, desde designers e gravadores 
                 até técnicos de instalação. Nossa estrutura de produção própria em Brasília 
                 nos permite garantir qualidade e prazo em cada etapa do processo — algo que 
-                nos diferencia no mercado de comunicação visual do DF."
+                nos diferencia no mercado de comunicação visual do DF.
               </p>
             </div>
             <div className="mt-8 flex flex-wrap gap-2">
