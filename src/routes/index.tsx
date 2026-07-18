@@ -293,17 +293,17 @@ function Index() {
 
           {/* Collage */}
           <div className="lg:col-span-5 relative h-[420px] sm:h-[520px] lg:h-[560px]">
-            <div className="absolute top-0 right-4 w-[62%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-gold shadow-2xl rotate-[4deg] hover:rotate-[2deg] transition-transform duration-500 z-20">
+            <div className="absolute top-0 right-4 w-[62%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-gold shadow-2xl rotate-[4deg] hover:rotate-[2deg] hover:scale-105 transition-transform duration-500 z-20">
               <img src={hero} alt="Letra caixa iluminada" className="w-full h-full object-cover" />
             </div>
-            <div className="absolute bottom-6 left-0 w-[58%] aspect-square rounded-2xl overflow-hidden border-4 border-royal-deep shadow-2xl -rotate-[6deg] hover:-rotate-[3deg] transition-transform duration-500 z-30">
+            <div className="absolute bottom-6 left-0 w-[58%] aspect-square rounded-2xl overflow-hidden border-4 border-royal-deep shadow-2xl -rotate-[6deg] hover:-rotate-[3deg] hover:scale-105 transition-transform duration-500 z-30">
               <img src={p2} alt="Fachada em ACM" className="w-full h-full object-cover" />
             </div>
-            <div className="absolute top-8 left-8 w-[42%] aspect-[3/4] rounded-2xl overflow-hidden border-4 border-border shadow-xl rotate-[-2deg] hover:rotate-0 transition-transform duration-500 z-10">
+            <div className="absolute top-8 left-8 w-[42%] aspect-[3/4] rounded-2xl overflow-hidden border-4 border-border shadow-xl rotate-[-2deg] hover:rotate-0 hover:scale-105 transition-transform duration-500 z-10">
               <img src={p1} alt="Adesivação de frota" className="w-full h-full object-cover" />
             </div>
             <div
-              className="absolute -bottom-2 right-6 z-40 bg-gold text-royal-ink font-display uppercase text-sm px-4 py-2 rounded-lg rotate-[-4deg] shadow-lg"
+              className="absolute -bottom-2 right-6 z-40 bg-gold text-royal-ink font-display uppercase text-sm px-4 py-2 rounded-lg hover:scale-110 rotate-[-4deg] shadow-lg"
             >
               + de 40mil projetos entregues
             </div>
@@ -353,36 +353,40 @@ function Index() {
       </section>
 
       {/* DIFERENCIAIS (bloco em dourado) */}
-      <section className="bg-orange-500 text-royal-ink">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-16 sm:py-20">
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-10 md:gap-14 items-start">
-            <div>
-              <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase mb-3">
-                Por que a Pincel?
-              </span>
-              <h2 className="font-display uppercase text-4xl sm:text-5xl leading-[0.95]">
-                Três motivos<br />
-                pra fechar
-                <br /> com a gente.
-              </h2>
+      <section className="relative bg-orange-500 text-royal-ink overflow-hidden group">
+  {/* Camada amarela (Gold) que desliza para empurrar o laranja */}
+  <div className="absolute inset-0 bg-gold transform -translate-x-full transition-transform duration-1000 ease-in-out group-hover:translate-x-0" />
+
+  {/* Conteúdo (z-10 garante que fique acima da camada amarela) */}
+  <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 py-16 sm:py-20">
+    <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-10 md:gap-14 items-start">
+      <div>
+        <span className="inline-block text-xs font-bold tracking-[0.3em] uppercase mb-3">
+          Por que a Pincel?
+        </span>
+        <h2 className="font-display uppercase text-4xl sm:text-5xl leading-[0.95]">
+          Três motivos<br />
+          pra fechar
+          <br /> com a gente.
+        </h2>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
+        {diferenciais.map((d) => (
+          <div key={d.title} className="border-t-2 border-royal-ink/80 pt-5">
+            <div className="flex items-start justify-between gap-3">
+              <d.icon className="h-8 w-8" />
+              <span className="font-display text-xl opacity-60">{d.n}</span>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
-              {diferenciais.map((d) => (
-                <div key={d.title} className="border-t-2 border-royal-ink/80 pt-5">
-                  <div className="flex items-start justify-between gap-3">
-                    <d.icon className="h-8 w-8" />
-                    <span className="font-display text-xl opacity-60">{d.n}</span>
-                  </div>
-                  <h3 className="mt-6 font-display uppercase text-2xl">{d.title}</h3>
-                  <p className="mt-2 text-royal-ink/85 leading-relaxed text-[15px]">
-                    {d.desc}
-                  </p>
-                </div>
-              ))}
-            </div>
+            <h3 className="mt-6 font-display uppercase text-2xl">{d.title}</h3>
+            <p className="mt-2 text-royal-ink/85 leading-relaxed text-[15px]">
+              {d.desc}
+            </p>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* PORTFÓLIO */}
       <section id="portfolio" className="py-20 sm:py-28 bg-royal">
@@ -435,13 +439,13 @@ function Index() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Collage */}
           <div className="lg:col-span-5 order-2 lg:order-1 relative h-[420px] sm:h-[500px]">
-            <div className="absolute top-0 left-0 w-[65%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-royal shadow-2xl -rotate-[3deg] hover:rotate-0 transition-transform duration-500 z-10">
+            <div className="absolute top-0 left-0 w-[65%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-royal shadow-2xl -rotate-[3deg] hover:rotate-0 hover:scale-105 transition-transform duration-500 z-10">
               <img src={p4} alt="Peça em acrílico" className="w-full h-full object-cover" />
             </div>
-            <div className="absolute bottom-4 right-0 w-[60%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-red shadow-2xl rotate-[5deg] hover:rotate-[2deg] transition-transform duration-500 z-20">
+            <div className="absolute bottom-4 right-0 w-[60%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-red shadow-2xl rotate-[5deg] hover:rotate-[2deg] hover:scale-105 transition-transform duration-500 z-20">
               <img src={p10} alt="Sinalização interna" className="w-full h-full object-cover" />
             </div>
-            <div className="absolute top-16 right-8 z-30 bg-royal-ink border border-gold/40 text-bone px-4 py-3 rounded-xl rotate-[3deg] shadow-xl">
+            <div className="absolute top-16 right-8 z-30 bg-royal-ink border border-gold/100 text-bone px-4 py-3 rounded-xl rotate-[3deg] hover:scale-110 shadow-xl">
               <div className="font-display text-3xl text-gold leading-none">[40]+</div>
               <div className="text-[10px] uppercase tracking-widest mt-1">anos de estrada</div>
             </div>
@@ -453,7 +457,7 @@ function Index() {
               Quem somos
             </span>
             <h2 className="font-display uppercase text-4xl sm:text-6xl leading-[0.95]">
-              Feito na régua, <br /> montado com <span className="neon">alma</span>.
+            "Mais que comunicação visual, um  <span className="neon">legado</span> gravado em cada detalhe"
             </h2>
             <div className="mt-6 space-y-4 text-bone/80 text-lg leading-relaxed">
               <p>
@@ -465,10 +469,10 @@ function Index() {
               </p>
               <p>
                 "Nosso compromisso vai além da produção: cuidamos de tudo, do projeto visual 
-                à instalação no local, com equipe própria e materiais de primeira linha. Acreditamos 
-                que uma placa bem feita é a primeira impressão que o seu cliente tem do seu 
-                negócio — e não aceitamos menos que [valor principal — ex: excelência / perfeição / compromisso 
-                com o prazo]. Por isso trabalhamos com ACM de alta durabilidade, acrílicos cortados a laser e 
+                à instalação no local, com equipe própria e materiais de primeira linha. 
+                Acreditamos que uma placa bem feita é a primeira impressão que o seu cliente tem 
+                do seu negócio — e não aceitamos menos que a perfeição que o nosso legado exige. 
+                Por isso trabalhamos com ACM de alta durabilidade, acrílicos cortados a laser e 
                 iluminação LED de última geração."
               </p>
               <p>
