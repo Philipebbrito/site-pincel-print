@@ -446,21 +446,42 @@ function Index() {
       <section id="sobre" className="py-20 sm:py-28 bg-royal-deep">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Collage */}
-          <div className="lg:col-span-5 order-2 lg:order-1 relative h-[420px] sm:h-[500px]">
-            <div className="absolute top-0 left-0 w-[65%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-royal shadow-2xl -rotate-[3deg] hover:rotate-0 hover:scale-105 active:rotate-0 active:scale-105 transition-transform duration-500 z-10">
-              <img src={p4} alt="Peça em acrílico" className="w-full h-full object-cover" />
-            </div>
-            <div className="absolute bottom-4 right-0 w-[60%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-red shadow-2xl rotate-[5deg] hover:rotate-[2deg] hover:scale-105 active:rotate-0 active:scale-105 transition-transform duration-500 z-20">
-              <img src={p10} alt="Sinalização interna" className="w-full h-full object-cover" />
-            </div>
-            <div className="absolute top-120 right-10 w-[80%] rounded-2xl overflow-hidden shadow-2xl rotate-[5deg] hover:rotate-[2deg] hover:scale-105 active:rotate-0 active:scale-105 transition-transform duration-500 z-20">
-              <img src={p11} alt="Sinalização interna" className="w-full h-full object-cover" />
-            </div>
-            <div className="absolute top-16 right-8 z-30 bg-royal-ink border border-gold/100 text-bone px-4 py-3 rounded-xl rotate-[3deg] hover:scale-110 shadow-xl">
-              <div className="font-display text-3xl text-gold leading-none">[40]+</div>
-              <div className="text-[10px] uppercase tracking-widest mt-1">anos de estrada</div>
-            </div>
-          </div>
+          {/* Container Pai Refatorado para Flexbox */}
+<div className="lg:col-span-5 order-2 lg:order-1 relative h-auto lg:h-[650px] flex flex-col justify-between">
+
+  {/* -- Parte Superior: Grid das 3 Imagens (p4, p10, Badge) -- */}
+  {/* Criamos um container relativo apenas para agrupar as imagens flutuantes */}
+  <div className="relative w-full h-[420px] sm:h-[500px] z-10">
+    {/* Imagem p4 */}
+    <div className="absolute top-0 left-0 w-[65%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-royal shadow-2xl -rotate-[3deg] hover:rotate-0 hover:scale-105 active:rotate-0 active:scale-105 transition-transform duration-500 z-10">
+      <img src={p4} alt="Peça em acrílico" className="w-full h-full object-cover" />
+    </div>
+
+    {/* Imagem p10 */}
+    <div className="absolute bottom-4 right-0 w-[60%] aspect-[4/5] rounded-2xl overflow-hidden border-4 border-red shadow-2xl rotate-[5deg] hover:rotate-[2deg] hover:scale-105 active:rotate-0 active:scale-105 transition-transform duration-500 z-20">
+      <img src={p10} alt="Sinalização interna" className="w-full h-full object-cover" />
+    </div>
+
+    {/* Badge [40]+ */}
+    <div className="absolute top-16 right-8 z-30 bg-royal-ink border border-gold/100 text-bone px-4 py-3 rounded-xl rotate-[3deg] hover:scale-110 shadow-xl">
+      <div className="font-display text-3xl text-gold leading-none">[40]+</div>
+      <div className="text-[10px] uppercase tracking-widest mt-1">anos de estrada</div>
+    </div>
+  </div>
+
+  {/* -- Parte Inferior: Assinatura (p11) -- */}
+  {/* Esta div ocupará o restante do espaço disponível, alinhada à direita e à base */}
+  {/* Adicionamos 'hidden md:block' para esconder em mobile muito pequeno se necessário,
+      ou 'flex justify-end' para manter alinhada à direita */}
+  <div className="w-full flex justify-end mt-6 lg:mt-0 z-0">
+    <img
+      src={p11}
+      alt="Assinatura em traços brancos"
+      className="w-[40%] lg:w-[55%] left-30 object-contain -rotate-[2deg] opacity-90 hover:opacity-100 hover:rotate-[2deg] hover:scale-105 active:rotate-0 active:scale-105 transition-opacity duration-500"
+    />
+  </div>
+
+</div>
 
           {/* Texto */}
           <div className="lg:col-span-7 order-1 lg:order-2">
