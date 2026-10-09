@@ -496,23 +496,22 @@ function Index() {
             <div className="mt-6 space-y-4 text-bone/80 text-lg leading-relaxed">
               <p>
                 A Pincel Placas foi fundada nos anos 80 por Carlos Magalhães, com uma visão 
-                simples: fazer placas que marcam presença. O que começou como uma oficina de 
-                sinalização em Brasília, cresceu para se tornar referência em comunicação visual 
-                no Distrito Federal, entregando projetos para comércios, franquias e grandes 
-                corporações ao longo de décadas.
+                simples: fazer placas que marcam presença. o que começou apenas com um pincel e tinta, 
+                cresceu para se tornar referência em comunicação visual no Distrito Federal, 
+                entregando projetos para comércios, franquias e grandes corporações ao longo de décadas.
               </p>
               <p>
                 Nosso compromisso vai além da produção: cuidamos de tudo, do projeto visual 
                 à instalação no local, com equipe própria e materiais de primeira linha. 
                 Acreditamos que uma placa bem feita é a primeira impressão que o seu cliente tem 
-                do seu negócio — e não aceitamos menos que a perfeição que o nosso legado exige. 
+                do seu negócio, e não aceitamos menos que a perfeição que o nosso legado exige. 
                 Por isso trabalhamos com ACM de alta durabilidade, acrílicos cortados a laser e 
                 iluminação LED de última geração.
               </p>
               <p>
                 Contamos com uma equipe de profissionais, desde designers e gravadores 
                 até técnicos de instalação. Nossa estrutura de produção própria em Brasília 
-                nos permite garantir qualidade e prazo em cada etapa do processo — algo que 
+                nos permite garantir qualidade e prazo em cada etapa do processo, algo que 
                 nos diferencia no mercado de comunicação visual do DF.
               </p>
             </div>
